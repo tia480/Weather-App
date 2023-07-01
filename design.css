@@ -1,0 +1,113 @@
+.search {
+    text-align: center;
+    font-size: larger;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: relative;
+    right: 155px;
+  }
+  
+  h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+  }
+  
+  .current-weather {
+    padding: 40px;
+    position: relative;
+    left: 322px;
+  }
+  
+  .Week-weather {
+    position: relative;
+    left: 360px;
+    bottom: 25px;
+  }
+  
+  .Card-1,
+  .Card-2,
+  .Card-3,
+  .Card-4,
+  .Card-5 {
+    background-color: #c5dbfc;
+  }
+  
+  .Card-b {
+    background-color: rgb(251, 228, 236);
+  }
+  
+  .time {
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    left: 50px;
+    bottom: 30 px;
+  }
+  
+  .Current-temp {
+    font-size: 35px;
+    opacity: 80%;
+    position: relative;
+    left: 20px;
+    bottom: 10px;
+  }
+  
+  .currently {
+    font-size: 13px;
+    opacity: 70%;
+    position: relative;
+    left: 70px;
+    bottom: 10px;
+  }
+  
+  .London {
+    position: relative;
+    left: 25px;
+    font-size: 25px;
+  }
+  
+  .cloud {
+    font-size: 25px;
+  }
+  
+  .one,
+  .two,
+  .three,
+  .four,
+  .five {
+    position: relative;
+    right: -40px;
+    font-size: 30px;
+  }
+  
+  .Monday,
+  .Tuesday,
+  .Wednesday,
+  .Thursday,
+  .Friday {
+    position: relative;
+    left: 210px;
+  }
+  
+  .Week-tem-one,
+  .Week-tem-two {
+    position: relative;
+    left: 340px;
+  }
+  .Week-tem-five {
+    position: relative;
+    left: 360px;
+  }
+  .Week-tem-three {
+    position: relative;
+    left: 310px;
+  }
+  
+  .Week-tem-four {
+    position: relative;
+    left: 330px;
+  }
+  
