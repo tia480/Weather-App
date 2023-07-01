@@ -22,7 +22,7 @@ CurrentTime.innerHTML = `${day} ${hour}:${minutes}pm`;
 
 //In your project, when a user searches for a city
 //(example: New York), it should display the name
-//of the city on the result page and the current temperature of the city. this is a change
+//of the city on the result page and the current temperature of the city. 
 
 function submitted(event) {
   event.preventDefault();
