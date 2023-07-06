@@ -1,7 +1,7 @@
 .container {
   max-width:600px;
   margin: 0 auto;
-  border: 1px solid red;
+  border: 1px solid grey;
 }
 .search {
     font-size: larger;
@@ -31,6 +31,7 @@
     position: relative;
     left: 20px;
     bottom: 10px;
+  
   }
   
   .currently {
@@ -50,13 +51,18 @@
   .cloud {
     font-size: 25px;
   }
-  
-  .one,
-  .two,
-  .three,
-  .four,
-  .five {
-    position: relative;
-    right: -40px;
-    font-size: 30px;
+
+  .current-weather{
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
+
+  .New{
+    padding-top: 10px;
+
+  }
+
+  .end-text{
+   text-align: center;
+  }
+
