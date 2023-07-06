@@ -14,7 +14,6 @@ let days = [
   "Saturday"
 ];
 let day = days[now.getDay()];
-
 let hour = now.getHours();
 let minutes = now.getMinutes();
 

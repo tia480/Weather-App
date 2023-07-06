@@ -1,11 +1,13 @@
+.container {
+  max-width:600px;
+  margin: 0;
+  border: 1px solid red;
+}
 .search {
-    text-align: center;
     font-size: larger;
     padding-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    position: relative;
-    right: 155px;
   }
   
   h1 {
@@ -16,9 +18,7 @@
   }
   
   .current-weather {
-    padding: 40px;
-    position: relative;
-    left: 322px;
+    
   }
   
   .Week-weather {
