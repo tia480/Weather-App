@@ -1,6 +1,6 @@
 .container {
   max-width:600px;
-  margin: 0;
+  margin: 0 auto;
   border: 1px solid red;
 }
 .search {
@@ -15,28 +15,6 @@
     padding-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
-  }
-  
-  .current-weather {
-    
-  }
-  
-  .Week-weather {
-    position: relative;
-    left: 360px;
-    bottom: 25px;
-  }
-  
-  .Card-1,
-  .Card-2,
-  .Card-3,
-  .Card-4,
-  .Card-5 {
-    background-color: #c5dbfc;
-  }
-  
-  .Card-b {
-    background-color: rgb(251, 228, 236);
   }
   
   .time {
@@ -82,32 +60,3 @@
     right: -40px;
     font-size: 30px;
   }
-  
-  .Monday,
-  .Tuesday,
-  .Wednesday,
-  .Thursday,
-  .Friday {
-    position: relative;
-    left: 210px;
-  }
-  
-  .Week-tem-one,
-  .Week-tem-two {
-    position: relative;
-    left: 340px;
-  }
-  .Week-tem-five {
-    position: relative;
-    left: 360px;
-  }
-  .Week-tem-three {
-    position: relative;
-    left: 310px;
-  }
-  
-  .Week-tem-four {
-    position: relative;
-    left: 330px;
-  }
-  
