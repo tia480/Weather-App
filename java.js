@@ -39,6 +39,11 @@ function currentTemp(response) {
   currentCountry.innerHTML = `${response.data.name}`;
   let tempNow = document.querySelector(".Current-temp");
   tempNow.innerHTML = `${temperature}°C`;
+  let iconElement = document.querySelector("#weathericon")
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`)
+    iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 let search = document.querySelector(".search");
