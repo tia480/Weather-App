@@ -42,9 +42,12 @@ function currentTemp(response) {
   let iconElement = document.querySelector("#weathericon")
   iconElement.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`)
-    iconElement.setAttribute("alt", response.data.weather[0].description);
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+
+    iconElement.setAttribute("alt", response.data.weather[0].description); 
+    console.log(response.data);  
 }
+
 
 let search = document.querySelector(".search");
 search.addEventListener("submit", submitted);

@@ -17,13 +17,6 @@
     font-size: 30px;
   }
   
-  .time {
-    font-size: 10px;
-    font-weight: bold;
-    position: relative;
-    left: 50px;
-    bottom: 30 px;
-  }
   
   .Current-temp {
     font-size: 35px;
@@ -55,6 +48,12 @@
   .current-weather{
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+  ul{
+  list-style: none;
+  line-height: 15px;
+  font-size: 10px;
   }
 
   .New{
