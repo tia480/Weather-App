@@ -34,11 +34,13 @@ function submitted(event) {
 }
 
 function currentTemp(response) {
+  console.log(response.data.main.temp);
   let temperature = Math.round(response.data.main.temp);
   let currentCountry = document.querySelector(".London");
   currentCountry.innerHTML = `${response.data.name}`;
   let tempNow = document.querySelector(".Current-temp");
   tempNow.innerHTML = `${temperature}°C`;
+  let description=document.querySelector("#")
   let iconElement = document.querySelector("#weathericon")
   iconElement.setAttribute(
     "src",
@@ -69,3 +71,16 @@ function showPosition(event) {
 
 let button = document.querySelector(".button");
 button.addEventListener("click", showPosition);
+
+function displayCelsiusTemperature(event)
+{
+  event.preventDefault();
+
+  let temperatureElement = document.querySelector(".Current-temp");
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrenheiTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheiTemperature);
+}
+let fahrenheitLink = document.querySelector("#fahrenheit-link")
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
