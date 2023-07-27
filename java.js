@@ -41,7 +41,11 @@ function currentTemp(response) {
   let tempNow = document.querySelector(".Current-temp");
   tempNow.innerHTML = `${temperature}°C`;
   let description=document.querySelector("#")
-  let iconElement = document.querySelector("#weathericon")
+  let iconElement = document.querySelector("#weathericon");
+  let humidityElement= document.querySelector("#Humidity");
+  let windElement= document.querySelector("#wind");
+  humidityElement.innerHTML = response.data.main.humidity;
+  windElement.innerHTML = Math.round(response.data.main.wind.speed);
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
@@ -72,15 +76,3 @@ function showPosition(event) {
 let button = document.querySelector(".button");
 button.addEventListener("click", showPosition);
 
-function displayCelsiusTemperature(event)
-{
-  event.preventDefault();
-
-  let temperatureElement = document.querySelector(".Current-temp");
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-  let fahrenheiTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheiTemperature);
-}
-let fahrenheitLink = document.querySelector("#fahrenheit-link")
-fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
