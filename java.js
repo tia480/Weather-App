@@ -76,3 +76,13 @@ function showPosition(event) {
 let button = document.querySelector(".button");
 button.addEventListener("click", showPosition);
 
+function displayFahrenheitTemperature(event)
+{
+  event.preventDefault();
+  let fahrenheitTemperature =  (14 * 9) / 5 + 32;
+  let temperatureElement =document.querySelector(".Current-temp")
+  temperatureElement.innerHTML= fahrenheitTemperature;
+  
+}
+let fahrenheitLink = document.querySelector("#fahrenheit-link")
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
