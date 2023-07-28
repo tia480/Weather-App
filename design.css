@@ -49,17 +49,11 @@ button{
 
   .mainicon{
     position: relative;
-    left: -130px;
-    top: 50px;
+    left: 180px;
+    top: -80px;
   }
   
-  .currently {
-    font-size: 13px;
-    opacity: 70%;
-    position: relative;
-    left: 70px;
-    bottom: 10px;
-  }
+  
   
   .London {
     position: relative;
@@ -71,7 +65,8 @@ button{
   .units{
     font-size: 15px;
     position: relative;
-    bottom: 17px;
+    bottom: 135px;
+    left: 275px;
   }
 
 
