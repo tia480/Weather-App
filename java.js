@@ -1,4 +1,6 @@
 //Display the current date and time using JavaScript: Tuesday 16:00
+let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
@@ -9,10 +11,19 @@ function formatDate(timestamp) {
   if (minutes < 10) {
       minutes = `0${minutes}`;
   }
-  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  let now = new Date();
+  let tTime = document.querySelector(".time");
+
+  tTime.innerHTML = formatDate(now);
+
+})
 
 //In your project, when a user searches for a city
 //(example: New York), it should display the name
@@ -32,6 +43,7 @@ function handleSubmit(event) {
   let cityInputElement = document.querySelector("#text");
   search(cityInputElement.value);
 }
+
 
 
 let form = document.querySelector(".search");
