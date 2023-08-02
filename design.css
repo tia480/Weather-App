@@ -85,23 +85,24 @@ button{
 
 
 
-  .New{
+  .form{
     padding-top: 10px;
     position: relative;
     bottom: 80px;
 
   }
 
-  .time{
-    position: relative;
-    font-size: 15px;
-    bottom: 15px;
-
-  }
-
+ 
 
   .end-text{
   text-align: center;
+  }
+
+  .timeinfo{
+    line-height:20px;
+    position: relative;
+    top: 65px;
+    font-size: 15px;
   }
 
   

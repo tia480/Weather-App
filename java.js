@@ -51,17 +51,17 @@ form.addEventListener("submit", handleSubmit);
 
 
 function currentTemp(response) {
+
   console.log(response.data.main.temp);
   let temperature = Math.round(response.data.main.temp);
   let currentCountry = document.querySelector(".London");
- 
+  let descriptionElement = document.querySelector(".description")
   let tempNow = document.querySelector(".Current-temp");
   let iconElement = document.querySelector("#weathericon");
   let humidityElement = document.querySelector("#Humidity");
   let dateElement = document.querySelector(".time");
   let windElement = document.querySelector("#wind");
-  let descriptionElement = document.querySelector(".description");
-
+  
   currentCountry.innerHTML = `${response.data.name}`;
   tempNow.innerHTML = `${temperature}`;
   descriptionElement.innerHTML = response.data.weather[0].description;
@@ -71,6 +71,8 @@ function currentTemp(response) {
 
   CelsiusTemperature =  response.data.main.temp;
   
+  console.log(response.data)
+   
 
   iconElement.setAttribute(
     "src",
@@ -79,9 +81,6 @@ function currentTemp(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
   console.log(response.data);
 }
-
-console.log(descriptionElement.innerHTML);
-
 
 let CelsiusTemperature = null;
 
