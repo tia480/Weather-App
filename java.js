@@ -50,9 +50,8 @@ let form = document.querySelector(".search");
 form.addEventListener("submit", handleSubmit);
 
 
-function currentTemp(response) {
 
-  console.log(response.data.main.temp);
+function currentTemp(response) {
   let temperature = Math.round(response.data.main.temp);
   let currentCountry = document.querySelector(".London");
   let descriptionElement = document.querySelector(".description")
@@ -70,9 +69,7 @@ function currentTemp(response) {
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
 
   CelsiusTemperature =  response.data.main.temp;
-  
-  console.log(response.data)
-   
+
 
   iconElement.setAttribute(
     "src",
@@ -81,6 +78,13 @@ function currentTemp(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
   console.log(response.data);
 }
+  document.addEventListener("DOMContentLoaded", function () {
+
+  let descriptionElement = document.querySelector(".description");
+  descriptionElement.innerHTML = "clear";
+});
+
+
 
 let CelsiusTemperature = null;
 

@@ -7,6 +7,13 @@
   font-family:Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+  }
+
 .search {
     font-size: larger;
     padding-top: 10px;
@@ -30,11 +37,11 @@ button{
   }
   
   
-  h1 {
-    text-align: center;
-    padding-top: 20px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 30px;
+.form{
+    padding-top: 10px;
+    position: relative;
+    bottom: 80px;
+
   }
 
   a {
@@ -85,24 +92,19 @@ button{
 
 
 
-  .form{
-    padding-top: 10px;
-    position: relative;
-    bottom: 80px;
+  
 
-  }
-
- 
-
-  .end-text{
-  text-align: center;
-  }
-
-  .timeinfo{
+ .timeinfo{
     line-height:20px;
     position: relative;
     top: 65px;
     font-size: 15px;
   }
+
+  .end-text{
+  text-align: center;
+  }
+
+  
 
   
