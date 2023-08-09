@@ -1,5 +1,5 @@
 .container {
-  max-width:600px;
+  max-width:700px;
   max-height: 400px;
   margin: 0 auto;
   border: 1px solid grey;
@@ -37,12 +37,18 @@ button{
   }
   
   
-.form{
+.forecast{
+    margin: 15px;
     padding-top: 10px;
     position: relative;
-    bottom: 80px;
-
+    bottom: 100px;
+    text-align: center;
   }
+
+  .forecast-temp-min{
+    opacity: 70%;
+  }
+
 
   a {
     text-decoration: none;
@@ -91,9 +97,6 @@ button{
   }
 
 
-
-  
-
  .timeinfo{
     line-height:20px;
     position: relative;
@@ -103,6 +106,8 @@ button{
 
   .end-text{
   text-align: center;
+  position: relative;
+  top: 10px;
   }
 
   
