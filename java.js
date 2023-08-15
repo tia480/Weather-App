@@ -49,18 +49,19 @@ function handleSubmit(event) {
 let form = document.querySelector(".search");
 form.addEventListener("submit", handleSubmit);
 
-function displayForecast(){
+function displayForecast(response){
+  let forcast = response.data.daily;
   let forecastElement =document.querySelector("#weather-forecast")
   let forecastHTML= `<div class= "row">`;
   let days= ["Wed","Thurs","Fri ","sat","Sun","Mon"]
-  days.forEach(function(day){
+  days.forEach(function(forecastDay){
   forecastHTML = forecastHTML +
  `<div class="col-2">
-    <div class="forecast-day-1">${(day)}</div>
-      🌤️
+    <div class="forecast-day-1">${forecastDay.dt}</div>
+      🌤️${forecastDay.weather[0].icon}
        <div class="forecast-temp">
-       <span class="forecast-temp-max"> 17° | </span>
-      <span class="forecast-temp-min"> 15° </span>
+       <span class="forecast-temp-max">${forecastDay.temp.max}° | </span>
+      <span class="forecast-temp-min"> ${forecastDay.temp.min}° </span>
    </div>
    </div>`;   
   })
@@ -73,9 +74,11 @@ function displayForecast(){
 
 displayForecast();
 function getForecast(coordinates){
- let apiKey = "c119ffef35b7245a5e03b6e5724ae961";
- let apiURL= `https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
- axios.get(apiURL).then(displayForecast)};
+ let apiKey = "63214c4281922e3bb72fdf12dada7734";
+ let apiURL= `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+ axios.get(apiURL).then(displayForecast)
+ console.log(coordinates);
+};
 
 
 
