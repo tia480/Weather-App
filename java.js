@@ -111,8 +111,8 @@ function currentTemp(response) {
   currentCountry.innerHTML = `${response.data.name}`;
   tempNow.innerHTML = `${temperature}`;
   descriptionElement.innerHTML = response.data.weather[0].description;
-  humidityElement.innerHTML = response.data.main.humidity;
-  windElement.innerHTML = Math.round(response.data.wind.speed);
+  humidityElement.innerHTML = `${(response.data.main.humidity)} %`;
+  windElement.innerHTML = `${Math.round(response.data.wind.speed)} m/s`;
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   CelsiusTemperature =  response.data.main.temp;
   iconElement.setAttribute(

@@ -3,25 +3,33 @@
   max-height: 400px;
   margin: 0 auto;
   border: 1px solid grey;
-  background-color: antiquewhite;
+  background-color: #75baff;
   font-family:Arial, Helvetica, sans-serif;
 }
 
-h1 {
-    text-align: center;
-    padding-top: 20px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 30px;
-  }
-
 .search {
-    font-size: larger;
-    padding-top: 10px;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 20px;
     position: relative;
     left: 90px;
+    Top: 60px;
+    border-color: pink;
   }
+
+  ::placeholder{
+    font-size: 15px;
+  }
+
+  input[type="submit"],
+.button button {
+  padding: 10px 20px;
+  background-color: rgba(8, 8, 8, 0.16);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
 
 button{
   border-radius: 10px 10px;
@@ -34,6 +42,7 @@ button{
     font: bold;
     font-size: 15px;
     line-height: 20px;
+    color: white;
   }
   
   
@@ -43,12 +52,16 @@ button{
     position: relative;
     bottom: 100px;
     text-align: center;
+    color: white;
   }
 
   .forecast-temp-min{
     opacity: 70%;
+    color: white;
   }
-
+  .forecast-temp-max{
+    color: rgb(50, 44, 44);
+  }
 
   a {
     text-decoration: none;
@@ -71,6 +84,7 @@ button{
     position: relative;
     left: 285px;
     bottom: 120px;
+    color: white;
   }
 
 
@@ -87,6 +101,7 @@ button{
     left: 25px;
     font-size: 45px;
     top: 70px;
+    color: white;
   }
   
   .units{
@@ -94,6 +109,15 @@ button{
     position: relative;
     bottom: 135px;
     left: 280px;
+    color: white;
+  }
+
+  #fahrenheit-link{
+    color: white;
+  }
+
+  #celsius-link{
+    color: white;
   }
 
 
@@ -102,12 +126,13 @@ button{
     position: relative;
     top: 65px;
     font-size: 15px;
+    color: white;
   }
 
   .end-text{
   text-align: center;
   position: relative;
-  top: 10px;
+  bottom: 65px;
   }
 
   
